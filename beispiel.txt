@@ -1,0 +1,8 @@
+ssh-keygen -t rsa -b 4096 -C "luca.klein@edu.tbz.ch"
+  Enter a file in which to save the key (~/.ssh/id_rsa): [Press enter]
+    Enter passphrase (empty for no passphrase): [Passwort]
+  Enter same passphrase again: [Passwort wiederholen]
+  
+
+  vagrant up
+  
