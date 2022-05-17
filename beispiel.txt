@@ -3,6 +3,6 @@ ssh-keygen -t rsa -b 4096 -C "luca.klein@edu.tbz.ch"
     Enter passphrase (empty for no passphrase): [Passwort]
   Enter same passphrase again: [Passwort wiederholen]
   
-
+cd Pfad/zum-M300-Verzeichnis/vagrant/web
   vagrant up
-  
+zum löschen: vagrant destroy -f
