@@ -1,0 +1,18 @@
+<h1> Docker install </h1>
+Command:  docker run -d --name LucaSQL -e TZ=UTC -p 30306:3306 -e MYSQL_ROOT_PASSWORD=Luca1234 ubuntu/mysql
+-d = so kommt man in die Kommando Zeile zurück
+--name = Name der Datenbank
+-e = Timezone
+-p = Portforwarding (Host:Container)
+-e = Passwort
+am Schluss die Image Version
+
+
+das Docker Image wird mit diesem Command gleich mitinstalliert wenn man es alleine downloaden will muss man den Command: Docker Push ubuntu/mysql 
+
+
+man kann nun auf die Datenbank Zugreifen über mySQL Workbench.
+
+
+<h1>Container</h1>
+ein Container ist eine VM ohne Betriebssystem.
