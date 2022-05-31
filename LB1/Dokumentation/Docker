@@ -13,6 +13,7 @@ das Docker Image wird mit diesem Command gleich mitinstalliert wenn man es allei
 
 man kann nun auf die Datenbank Zugreifen über mySQL Workbench.
 
+![Docker](/images/Unbekannt.png)
 
 <h1>Container</h1>
 ein Container ist eine VM ohne Betriebssystem.
