@@ -1,0 +1,3 @@
+<h1>Next Cloud</h1>
+einen Docker Container der automatish gebildet wird mit einem Config File das auf der Linux Maschiene liegt
+so kann man es automatisch aufbauen lassen.
