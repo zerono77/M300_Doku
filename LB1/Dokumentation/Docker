@@ -17,3 +17,46 @@ man kann nun auf die Datenbank Zugreifen über mySQL Workbench.
 
 <h1>Container</h1>
 ein Container ist eine VM ohne Betriebssystem.
+
+
+Was ist Docker?
+•	Software zur Isolierung von Anwendungen mit Hilfe von Containervirtualisierung
+•	Erstellung, Bereitstellung und Verwaltung von Containerisierten Anwendungen
+•	Mit der Hilfe eines Docker Containers kannst du ein weiteres Betriebssystem neben deinem Host-Betriebssystem betreiben. 
+Geschichte
+•	2013 veröffentlicht von dotCloud
+•	Oktober 2013 umbenennt auf „Docker“
+•	wurde 2014 Bestandteil des Red Hat Enterprise
+•	2014 schlossen sich die Firmen: Microsoft, Red Hat, IBM, Docker, Mesosphere, Core OS und Saltstack dem Kubernetes Projekt (initiiert von Google) an.
+o	Ziel: Docker-Umgebung auf privaten, öffentlichen und Hybrid-Cloud-Umgebungen bereitstellen zu können.
+•	insgesamt erhielt Docker 120 Millionen US-Dollar an Investitionen.
+•	Seit 2019 nicht mehr Teil von Red Hat Enterprise.
+o	Sie gingen wegen Problemen eigene Wege und Red Hat entschied sich für "podman"
+•	2019 für 35 Millionen an Mirantis verkauft.
+o	Support wird für Docker Swarm nach 2 Jahren eingestellt.
+Voraussetzungen
+•	Betriebssystem: Haupt OS Linux
+•	Prozessor: 64-Bit-Prozessor mit Second Level Address Translation (SLAT)
+•	Arbeitsspeicher: 8 GB RAM
+•	Hardware-Virtualisierungsunterstützung auf BIOS-Ebene muss in den BIOS-Einstellungen aktiviert sein (Für Windows)
+•	Hyper-V und Containers Windows-Funktionen müssen aktiviert sein (Für Windows)
+•	Prozessor: Intel Core i5 8400 Coffee Lake oder besser
+
+Aufbau bzw. Struktur
+•	Docker verwendet eine Client-Server-Architektur.
+•	Der Docker-Client kommuniziert mit dem Docker-Daemon, der für das Erstellen, Ausführen und Verteilen der Docker-Container zuständig ist.
+•	Der Docker-Client und der Daemon kommunizieren über eine REST-API, über UNIX-Sockets oder über eine Netzwerkschnittstelle. 
+•	Der Client kann auf demselben Host laufen wie der Docker Daemon, aber auch auf jeglichen anderen Hosts.
+ Funktionen
+•	Verwendet Linux Kernel 
+•	Funktionen „Cgroups“ & „Namespace“
+•	Cgroups	
+	Ressourcen, wie zB. CPU-Leistung, Speicherplatz, Arbeitsspeicher unter einer benutzerdefinierten Gruppe von Aufgaben (Prozessen) auf dem System aufteilen.
+•	Namespaces
+	Feature des Linux-Kernels
+	 partitionieren Kernel-Ressourcen und gewährleisten damit die Abgrenzung (Isolierung) von Prozessen untereinander. 
+	Prozess eines Namespace kann nur Kernel-Ressourcen desselben Namespace sehen
+•	Prozesse isoliert
+•	Damit diese unabhängig voneinander laufen können.
+•	Tool baut auf Linux Kernel auf
+•	Macht Docker einzigartig und benutzerfreundlich
