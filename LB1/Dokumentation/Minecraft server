@@ -1,0 +1,6 @@
+Filesystem:
+cd /home
+mkdir Minecraft
+cd Minecraft
+mkdir Plugins
+docker volume create
