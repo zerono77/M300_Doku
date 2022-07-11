@@ -14,7 +14,8 @@ Text
 Testvorgang | Erwartung | Resultat
 -------- | -------- | --------
  Der Container wird offline genommen und neu gestartet | Mit dem Docker-Compose Command, soll der Container mit dem Minecraft server Gestartet werden   | Der Minecraft Server startet sofort. 
-Inhalt   | Inhalt   | Inhalt
+Nachdem der Server Neu gestartet wurde, wird geschaut, ob die selbe Welt geladen wird (kontrolle mit bauten im Spiel)   | Die selbe welt sollte geladen werden, mit den vorgemachten Bauten.   | Es wird die Selbe Karte geladen. 
+-------- | -------- | --------
 
 ## Quellen
 Text
