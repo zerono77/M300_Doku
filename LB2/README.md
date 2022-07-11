@@ -10,29 +10,46 @@ Text
 ## Umsetzung
 
 mkdir minecraft-data
+
 touch docker-compose.yml
+
 nano docker-compose.yml
 
+### File 
 ---------------------------------------------------------
+
 version: "3"
 
 services:
-  mc:
-    image: itzg/minecraft-server
-    ports:
-      - 25565:25565
-    environment:
-      EULA: "TRUE"
-    tty: true
-    stdin_open: true
-    restart: unless-stopped
-    volumes:
-      # attach a directory relative to the directory containing this compose file
-      - ./minecraft-data:/data
+
+mc:
+  
+image: itzg/minecraft-server
+    
+ports:
+    
+25565:25565
+      
+environment:
+    
+EULA: "TRUE"
+      
+tty: true
+    
+stdin_open: true
+    
+restart: unless-stopped
+    
+volumes:
+      
+./minecraft-data:/data
+      
 ---------------------------------------------------------------
 
 sudo apt  install docker-compose
+
 yes
+
 docker-compose up -d
 
 ## Testing
