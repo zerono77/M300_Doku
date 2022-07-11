@@ -8,7 +8,32 @@ Wir wollen dies mit einem Docker .yml File realisieren.
 Text
 
 ## Umsetzung
-Text
+
+mkdir minecraft-data
+touch docker-compose.yml
+nano docker-compose.yml
+
+---------------------------------------------------------
+version: "3"
+
+services:
+  mc:
+    image: itzg/minecraft-server
+    ports:
+      - 25565:25565
+    environment:
+      EULA: "TRUE"
+    tty: true
+    stdin_open: true
+    restart: unless-stopped
+    volumes:
+      # attach a directory relative to the directory containing this compose file
+      - ./minecraft-data:/data
+---------------------------------------------------------------
+
+sudo apt  install docker-compose
+yes
+docker-compose up -d
 
 ## Testing
 Testvorgang | Erwartung | Resultat
@@ -18,4 +43,4 @@ Nachdem der Server Neu gestartet wurde, wird geschaut, ob die selbe Welt geladen
 
 
 ## Quellen
-Text
+https://github.com/itzg/docker-minecraft-server
