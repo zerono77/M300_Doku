@@ -3,14 +3,33 @@ Unsere Idee ist es, einen Minecraft server im Container aufzusetzen. Dieser soll
 
 # Inhaltsverszeichnis
 
-## Service-Aufbau 
-Text
+## Services
+Docker Hub Seite: https://hub.docker.com/r/itzg/minecraft-server
 
 ## Umsetzung
-Text
+
+mkdir minecraft-data
+
+touch docker-compose.yml
+
+nano docker-compose.yml
+
+### File 
+
+
+
+sudo apt  install docker-compose
+
+yes
+
+docker-compose up -d
 
 ## Testing
-Text
+Testvorgang | Erwartung | Resultat
+-------- | -------- | --------
+ Der Container wird offline genommen und neu gestartet | Mit dem Docker-Compose Command, soll der Container mit dem Minecraft server Gestartet werden   | Der Minecraft Server startet sofort. 
+Nachdem der Server Neu gestartet wurde, wird geschaut, ob die selbe Welt geladen wird (kontrolle mit bauten im Spiel)   | Die selbe welt sollte geladen werden, mit den vorgemachten Bauten.   | Es wird die Selbe Karte geladen. 
+
 
 ## Quellen
-Text
+https://github.com/itzg/docker-minecraft-server
